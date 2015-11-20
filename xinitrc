@@ -45,23 +45,14 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 #dualhead.sh
 
-#remove pcspkr
-xset -b
-
 #set caps to ctrl
 setxkbmap -option ctrl:nocaps
 
-#start xscreensaver
-/usr/bin/xscreensaver --no-splash &
+#setup monitors
+xrandr --output VGA1 --auto --rotate normal --pos 0x0 --output VGA1 --rotate left --left-of VGA1
 
-#set the background
-feh --bg-fill ~/8bit.jpg
-
-#start the policy kit GUI tool
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-#start xbindkeys (used to lock screen)
-xbindkeys
+#set wallpaper
+feh --bg-fill ~/wallpaper.jpg 
 
 #start the wm
 exec i3

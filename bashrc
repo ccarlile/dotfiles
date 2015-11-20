@@ -15,7 +15,7 @@
 # Bcoz im not on a mac
 export PATH="/home/chris/bin:$PATH"
 
-export PS1="\n\[\033[38;5;110m\]\u\[\033[m\]@\[\033[38;5;148m\]\h:\[\033[38;5;203m\]\w\[\033[m\]\n$ "
+export PS1="\n\[\033[38;5;110m\]\u\[\033[m\]@\[\033[38;5;143m\]\h:\[\033[38;5;173m\]\w\[\033[m\]\n$ "
 export CLICOLOR=1
 export EDITOR=vim
 #following line is only for mac osx
@@ -29,4 +29,5 @@ alias suvim='sudo vim -u ~/.vimrc'
 alias lock='xscreensaver-command --lock'
 alias zathura='zathura --fork'
 alias fuck='sudo $(history -p \!\!)'
-command fortune -a | cowsay
+command cowsay 'and wat a shitty computer it was!'
+#command fortune -a | cowsay
