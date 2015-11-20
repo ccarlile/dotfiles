@@ -1,0 +1,21 @@
+set -g utf8
+set-window-option -g utf8 on
+set-option -g default-command bash
+set -g default-terminal "screen-256color"
+set -g prefix C-q
+unbind C-b
+
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+bind w resize-pane -U 10
+bind a resize-pane -L 10
+bind s resize-pane -D 10
+bind d resize-pane -R 10
+
+set -g status-bg colour110
+
+set -g base-index 1
+set -g pane-base-index 1

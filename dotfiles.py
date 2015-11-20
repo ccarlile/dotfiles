@@ -8,6 +8,7 @@ files = {
     'packup': 'packup',
     'xinitrc': '.xinitrc',
     'gtkrc': '.gtkrc-2.0',
+    'tmuxconf': '.tmux.conf',
     'hybrid.vim': '.vim/colors/hybrid.vim',
     'Xresources': '.Xresources'}
 
