@@ -8,6 +8,7 @@ files = {
     'packup': 'packup',
     'xinitrc': '.xinitrc',
     'gtkrc': '.gtkrc-2.0',
+    'hybrid.vim': '.vim/colors/hybrid.vim',
     'Xresources': '.Xresources'}
 
 thisDir = os.path.dirname(os.path.realpath(__file__))
