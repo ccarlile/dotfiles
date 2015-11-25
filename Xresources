@@ -81,5 +81,5 @@
 *color15: #C5C8C6
 
 xterm*metaSendsEscape: true
-xterm*faceName: Terminess Powerline:style=Regular:size=10
+xterm*faceName: Terminess Powerline:style=Regular:size=9
 URxvt.scrollBar: false

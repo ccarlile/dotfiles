@@ -17,7 +17,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 10
-font pango:Terminess Powerline 10
+font pango:Terminess Powerline 8
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -34,7 +34,7 @@ floating_modifier $mod
 bindsym $mod+Return exec uxterm
 
 # l33t gaps bro
-gaps inner 8
+#gaps inner 8
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -97,7 +97,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # No window titlebar
-new_window pixel 3
+new_window pixel 1
 
 # switch to workspace
 bindsym $mod+1 workspace number 1 web
@@ -173,4 +173,4 @@ bar {
 client.focused #81a2be #81a2be #1d1f21 #282a2e
 client.focused_inactive #373b41 #373b41 #969896 #282a2e
 client.unfocused #282a2e #282a2e #969896 #282a2e
-client.urgent #373b41 #cc6666 #ffffff #cc6666
+client.urgent #37ab41 #cc6666 #ffffff #cc6666
