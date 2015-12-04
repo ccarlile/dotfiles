@@ -31,5 +31,5 @@ alias lock='xscreensaver-command --lock'
 alias zathura='zathura --fork'
 alias fuck='sudo $(history -p \!\!)'
 alias tmux='tmux -2'
-command cowsay 'one day Ill be a real machine!'
-#command fortune -a | cowsay
+#command cowsay 'one day Ill be a real machine!'
+command fortune -a | cowsay
