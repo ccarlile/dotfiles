@@ -10,6 +10,7 @@ files = {
     'gtkrc': '.gtkrc-2.0',
     'tmuxconf': '.tmux.conf',
     'hybrid.vim': '.vim/colors/hybrid.vim',
+    'newmachine.sh': 'newmachine.sh',
     'Xresources': '.Xresources'}
 
 thisDir = os.path.dirname(os.path.realpath(__file__))

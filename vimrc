@@ -67,7 +67,7 @@ set noshowmode
 "
 "lightline config
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'hybrid',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
       \   'right': [ [ 'syntastic', 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
@@ -285,6 +285,9 @@ Plugin 'scrooloose/nerdtree'
 "
 "lightline.vim to replace airline
 Plugin 'itchyny/lightline.vim'
+
+"and the hybrid scheme
+Plugin 'cocopon/lightline-hybrid.vim'
 
 "CtrlP because wizards
 Plugin 'https://github.com/kien/ctrlp.vim'
