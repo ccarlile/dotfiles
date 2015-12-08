@@ -276,7 +276,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdtree'
 
 ""youcompleteme, for code completion"
-Plugin 'valloric/YouCompleteMe'
+"Plugin 'valloric/YouCompleteMe'
 
 ""Plugin 'noah/vim256-color'
 

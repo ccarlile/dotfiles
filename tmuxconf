@@ -49,7 +49,7 @@ bind-key -n M-8 select-window -t 8
 bind-key -n M-9 select-window -t 9
 
 # more rice
-set -g status-bg colour110
+set -g status-bg colour143
 
 # sometimes counting from 0 doesnt make sense
 set -g base-index 1
