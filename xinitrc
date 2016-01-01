@@ -52,7 +52,7 @@ setxkbmap -option ctrl:nocaps
 #xrandr --output VGA1 --auto --rotate normal --pos 0x0 --output VGA1 --rotate left --left-of VGA1
 
 #set wallpaper
-feh --bg-fill ~/wallpaper.png 
+feh --bg-fill ~/rice/wallpaper.png 
 
 #start the wm
 exec i3

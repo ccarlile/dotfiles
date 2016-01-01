@@ -13,7 +13,7 @@
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # Bcoz im not on a mac
-export PATH="/home/chris/bin:$PATH"
+export PATH="/home/chris/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:$PATH"
 
 export PS1="\n\[\033[38;5;110m\]\u\[\033[m\]@\[\033[38;5;143m\]\h:\[\033[38;5;173m\]\w\[\033[m\]\n$ "
 export TERM="xterm-256color"
@@ -31,5 +31,11 @@ alias lock='xscreensaver-command --lock'
 alias zathura='zathura --fork'
 alias fuck='sudo $(history -p \!\!)'
 alias tmux='tmux -2'
+alias i3cheat='cat ~/.i3/config | grep'
+alias wevl='mplayer http://peace.str3am.com:6030/'
+
 #command cowsay 'one day Ill be a real machine!'
 command fortune -a | cowsay
+
+export NVM_DIR="/home/chris/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

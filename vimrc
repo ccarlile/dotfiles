@@ -289,6 +289,9 @@ Plugin 'itchyny/lightline.vim'
 "and the hybrid scheme
 Plugin 'cocopon/lightline-hybrid.vim'
 
+"and tmuxline so tmux looks good too
+Plugin 'edkolev/tmuxline.vim'
+
 "CtrlP because wizards
 Plugin 'https://github.com/kien/ctrlp.vim'
 "Extend CtrlP to use tabs
@@ -321,6 +324,9 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'rking/ag.vim'
 
 call vundle#end()
+
+"no powerline seperators in tmuxline
+let g:tmuxline_powerline_separators = 0
 
 "disable default goldenview (interferes w ctrlp)
 let g:goldenview__enable_default_mapping = 0
