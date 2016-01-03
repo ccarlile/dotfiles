@@ -65,6 +65,11 @@ set noshowmode
 "let g:airline_powerline_fonts = 1
 "let g:airline#extensions#tabline#enabled = 1
 "
+
+"Parenthesis stuff
+let g:rainbow_active = 1
+"Tmuxline no powerline
+let g:tmuxline_powerline_separators = 0
 "lightline config
 let g:lightline = {
       \ 'colorscheme': 'hybrid',
@@ -276,7 +281,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdtree'
 
 ""youcompleteme, for code completion"
-"Plugin 'valloric/YouCompleteMe'
+Plugin 'valloric/YouCompleteMe'
 
 ""Plugin 'noah/vim256-color'
 
@@ -288,6 +293,9 @@ Plugin 'itchyny/lightline.vim'
 
 "and the hybrid scheme
 Plugin 'cocopon/lightline-hybrid.vim'
+
+"Tmuxline for extra le33tness
+Plugin 'edkolev/tmuxline.vim'
 
 "CtrlP because wizards
 Plugin 'https://github.com/kien/ctrlp.vim'
@@ -319,6 +327,13 @@ Plugin 'nathanaelkane/vim-indent-guides'
 
 "Ag for sexy searchin
 Plugin 'rking/ag.vim'
+
+"the following plugins were added for working through SICP, but may prove
+"useful in other settings.
+
+Plugin 'sjl/tslime.vim'
+Plugin 'vim-scripts/paredit.vim'
+Plugin 'oblitum/rainbow'
 
 call vundle#end()
 

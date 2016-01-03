@@ -35,7 +35,7 @@ floating_modifier $mod
 bindsym $mod+Return exec uxterm
 
 # l33t gaps bro
-gaps inner 8
+#gaps inner 8
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -162,13 +162,14 @@ bindsym $mod+r mode "resize"
 bar {
   status_command i3status
   colors {
-    statusline #AAAAAA
-    background #333333
-    focused_workspace #282828 #282828 #FFFFFF
-    inactive_workspace #333333 #333333 #AAAAAA
+    statusline #c5c8c6
+    background #1d1f21
+    focused_workspace #282828 #b5bd68 #303030
+    urgent_workspace #282828 #b5bd68 #303030
+    inactive_workspace #1d1f21 #1d1f21 #AAAAAA
   }
 }
 
 client.unfocused #333333 #333333 #FFFFFF #333333
 client.focused_inactive #333333 #333333 #FFFFFF #000000
-client.focused #000000 #000000 #FFFFFF #000000
+client.focused #000000 #b5bd68 #FFFFFF #000000
