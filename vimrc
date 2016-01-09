@@ -335,6 +335,9 @@ Plugin 'sjl/tslime.vim'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'oblitum/rainbow'
 
+"Vimwiki, because emacs is the dumb
+Plugin 'vimwiki/vimwiki'
+
 call vundle#end()
 
 "disable default goldenview (interferes w ctrlp)
@@ -371,6 +374,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 "let g:ctrlp_use_caching = 0
 
 filetype plugin indent on
+filetype plugin on
 
 set t_Co=256
 colorscheme hybrid 
