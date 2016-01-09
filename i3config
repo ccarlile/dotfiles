@@ -35,7 +35,7 @@ floating_modifier $mod
 bindsym $mod+Return exec uxterm
 
 # l33t gaps bro
-#gaps inner 8
+gaps inner 8
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -165,7 +165,7 @@ bar {
     statusline #c5c8c6
     background #1d1f21
     focused_workspace #282828 #b5bd68 #303030
-    urgent_workspace #282828 #b5bd68 #303030
+    urgent_workspace #282828 #cc6666 #303030
     inactive_workspace #1d1f21 #1d1f21 #AAAAAA
   }
 }
