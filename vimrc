@@ -302,7 +302,7 @@ Plugin 'https://github.com/kien/ctrlp.vim'
 "Extend CtrlP to use tabs
 Plugin 'davidegx/ctrlp-smarttabs'
 
-"Plugin 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 
 "Syntastic because JS is hard
 Plugin 'scrooloose/syntastic'
