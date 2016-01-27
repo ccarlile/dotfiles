@@ -12,7 +12,8 @@ files = {
     'hybrid.vim': '.vim/colors/hybrid.vim',
     'newmachine.sh': 'newmachine.sh',
     'Xresources': '.Xresources',
-    'zshrc': '.zshrc'}
+    'zshrc': '.zshrc',
+    'hybrid.zsh-theme': '.zsh/hybrid.zsh-theme'}
 
 thisDir = os.path.dirname(os.path.realpath(__file__))
 home = os.path.expanduser('~')
