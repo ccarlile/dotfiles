@@ -280,6 +280,9 @@ Plugin 'tpope/vim-repeat'
 "NERDTREE for NRED CRED 
 Plugin 'scrooloose/nerdtree'
 
+"And comments
+Plugin 'scrooloose/nerdcommenter'
+
 ""youcompleteme, for code completion"
 Plugin 'valloric/YouCompleteMe'
 
@@ -338,6 +341,9 @@ Plugin 'oblitum/rainbow'
 "Vimwiki, because emacs is the dumb
 Plugin 'vimwiki/vimwiki'
 
+"Rust is so hot right now
+Plugin 'rust-lang/rust.vim'
+
 call vundle#end()
 
 "disable default goldenview (interferes w ctrlp)
@@ -375,6 +381,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 filetype plugin indent on
 filetype plugin on
+filetype on
 
 set t_Co=256
 colorscheme hybrid 
