@@ -11,7 +11,8 @@ files = {
     'tmuxconf': '.tmux.conf',
     'hybrid.vim': '.vim/colors/hybrid.vim',
     'newmachine.sh': 'newmachine.sh',
-    'Xresources': '.Xresources'}
+    'Xresources': '.Xresources',
+    'zshrc': '.zshrc'}
 
 thisDir = os.path.dirname(os.path.realpath(__file__))
 home = os.path.expanduser('~')

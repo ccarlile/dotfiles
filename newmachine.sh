@@ -6,12 +6,24 @@ OS=$(cat /etc/issue | awk '{print $1}')
 
 # Install tmux, git, vim
 if [ $OS = 'Arch' ]; then
-    sudo pacman -S tmux git vim curl
+    echo 'Found Arch'
+    sudo pacman -Syu
+    yes | sudo pacman -S tmux git vim curl cowsay fortune-mod
 fi
 
 if [ $OS = 'Ubuntu' ]; then
-    sudo apt-get install tmux git vim build-essential curl
+    echo 'Found Ubuntu'
+    sudo apt-get update
+    #stupid grub
+    sudo apt-mark hold grub-common grub-pc grub-pc-bin grub2-common grub
+    yes | sudo apt-get upgrade
+    yes | sudo apt-get install tmux git vim build-essential curl fortune-mod
 fi
+
+# Create vim direcrtories
+mkdir $HOME/.vim
+mkdir $HOME/.vim/backup
+mkdir $HOME/.vim/colors
 
 # Git clone dotfiles
 cd $HOME
@@ -20,13 +32,9 @@ cd dotfiles/
 
 # Install dotfiles
 python dotfiles.py install
-# Create vim direcrtories
-mkdir $HOME/.vim
-mkdir $HOME/.vim/backup
-mkdir $HOME/.vim/colors
 
 # Git clone vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install nvm
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
