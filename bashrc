@@ -33,3 +33,7 @@ alias fuck='sudo $(history -p \!\!)'
 alias tmux='tmux -2'
 #command cowsay 'one day Ill be a real machine!'
 command fortune -a | cowsay
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+

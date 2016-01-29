@@ -37,3 +37,7 @@ command fortune -a | cowsay
 #New to .zshrc
 alias wifi='sudo wifi-menu'
 alias fuck='sudo $(fc -ln -1)'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
