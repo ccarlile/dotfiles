@@ -35,7 +35,7 @@ floating_modifier $mod
 bindsym $mod+Return exec uxterm
 
 # l33t gaps bro
-#gaps inner 8
+gaps inner 8
 
 # kill focused window
 bindsym $mod+Shift+q kill

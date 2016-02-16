@@ -20,6 +20,10 @@ set tabstop=4
 set shiftwidth=4
 set wrap lbr
 
+"tab-specific for js/html
+autocmd Filetype javascript setlocal shiftwidth=2 tabstop=2
+autocmd Filetype html setlocal shiftwidth=2 tabstop=2
+
 "change leading spaces to dots
 "set list
 "set listchars=trail:•
@@ -30,6 +34,9 @@ set directory=~/.vim/backup//
 
 "add bracket matching for html
 set matchpairs +=<:>
+
+"and activate the tag matching runtime
+runtime macros/matchit.vim
 
 
 "set shortmess=a
