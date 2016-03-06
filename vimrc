@@ -222,6 +222,9 @@ endfunction
 syntax on
 au BufNewFile,BufRead *.handlebars set filetype=html
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.i set filetype=swig
+au BufNewFile,BufRead *.swig set filetype=swig
+ 
 
 "some remappings
 imap jk <esc>

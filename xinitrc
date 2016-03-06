@@ -49,7 +49,7 @@ fi
 setxkbmap -option ctrl:nocaps
 
 #setup monitors
-#xrandr --output VGA1 --auto --rotate normal --pos 0x0 --output VGA1 --rotate left --left-of VGA1
+xrandr --output DVI-I-1 --auto --rotate normal --pos 0x0 --output DP-2 --rotate left --left-of DVI-I-1
 
 #set wallpaper
 feh --bg-fill ~/wallpaper.png 
