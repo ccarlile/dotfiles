@@ -18,15 +18,15 @@ compinit
 source ~/.zsh/hybrid.zsh-theme
 
 #Stuff i liked from bash
-export PATH="/home/chris/bin:$PATH"
+export PATH="/home/chris/bin/dasht/bin:/home/chris/bin:$PATH"
 export TERM="xterm-256color"
 export EDITOR=vim
 export CLICOLOR=1
-alias ls='ls -GCFh --color'
+alias ls='ls -GCFh' 
 alias ll='ls -GlFh'
 alias nf='ls -l | wc -l'
-alias python='python2'
-alias pip='pip2'
+#alias python='python2'
+#alias pip='pip2'
 alias zathura='zathura --fork'
 #Doesnt work in zsh
 #alias fuck='sudo $(history -p \!\!)'

@@ -21,7 +21,7 @@ export CLICOLOR=1
 export EDITOR=vim
 #following line is only for mac osx
 #export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -GCFh --color'
+#alias ls='ls -GCFh --color'
 alias ll='ls -GlFh'
 alias nf='ls -l | wc -l'
 alias python='python2'

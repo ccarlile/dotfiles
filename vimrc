@@ -38,6 +38,8 @@ set matchpairs +=<:>
 "and activate the tag matching runtime
 runtime macros/matchit.vim
 
+"need this for proper backspace insert mode functionality on OSX
+set backspace=2
 
 "set shortmess=a
 
@@ -224,6 +226,8 @@ au BufNewFile,BufRead *.handlebars set filetype=html
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.i set filetype=swig
 au BufNewFile,BufRead *.swig set filetype=swig
+au BufNewFile,BufRead *.less set filetype=css
+au BufNewFile,BufRead *.scala set filetype=scala
  
 
 "some remappings
@@ -294,7 +298,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
 ""youcompleteme, for code completion"
-Plugin 'valloric/YouCompleteMe'
+"Plugin 'valloric/YouCompleteMe'
+"alternative code completion - much more minimal
+Plugin 'ervandew/supertab'
 
 ""Plugin 'noah/vim256-color'
 
@@ -353,6 +359,10 @@ Plugin 'vimwiki/vimwiki'
 
 "Rust is so hot right now
 Plugin 'rust-lang/rust.vim'
+
+"Scala because that's like my job now
+Plugin 'derekwyatt/vim-scala'
+Plugin 'ensime/ensime-vim'
 
 call vundle#end()
 
