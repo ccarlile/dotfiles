@@ -14,6 +14,7 @@ files = {
     'newmachine.sh': 'newmachine.sh',
     'Xresources': '.Xresources',
     'zshrc': '.zshrc',
+    'sbtinit': 'bin/sbtinit',
     'hybrid.zsh-theme': '.zsh/hybrid.zsh-theme'}
 
 thisDir = os.path.dirname(os.path.realpath(__file__))

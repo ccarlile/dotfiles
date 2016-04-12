@@ -18,7 +18,7 @@ compinit
 source ~/.zsh/hybrid.zsh-theme
 
 #Stuff i liked from bash
-export PATH="/home/chris/bin/dasht/bin:/home/chris/bin:$PATH"
+export PATH="$HOME/bin/dasht/bin:$HOME/bin:/usr/local/bin:$PATH"
 export TERM="xterm-256color"
 export EDITOR=vim
 export CLICOLOR=1
@@ -31,7 +31,7 @@ alias zathura='zathura --fork'
 #Doesnt work in zsh
 #alias fuck='sudo $(history -p \!\!)'
 alias tmux='tmux -2'
-command fortune -a | cowsay
+command fortune | cowsay
 
 
 #New to .zshrc
